@@ -9,6 +9,4 @@ My personal dot files for macOS, inspired by this course:
 - Mission control preference
 - Finder show path bar
 - Trackpad
-- .zshrc
 - Git (config & SSH)
-- Homebrew Install
