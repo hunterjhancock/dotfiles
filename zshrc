@@ -22,8 +22,11 @@ function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
 
-# Locations to $PATH variable
-## Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-## n Node version management
-export PATH="$PATH:$N_PREFIX/bin"
+# Locations to $path array
+typeset -U path
+
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
