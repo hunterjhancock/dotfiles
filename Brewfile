@@ -8,6 +8,8 @@ brew "git"
 brew "mas"
 # Stand alone ad blocker
 cask "adguard"
+# Voice and text chat software
+cask "discord"
 # Web browser
 cask "google-chrome"
 # Software for Logitech devices
