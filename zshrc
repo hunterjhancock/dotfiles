@@ -1,3 +1,7 @@
+# Variables
+## export HOMEBREW_CASK_OPTS="--no-quarantine"
+## ^an option for installing casks without a warning
+
 # Aliases
 alias ls='ls -oAhFG'
 
