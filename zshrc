@@ -1,3 +1,5 @@
+echo "Hello from .zshrc"
+
 # Variables
 ## export HOMEBREW_CASK_OPTS="--no-quarantine"
 ## ^an option for installing casks without a warning
