@@ -12,3 +12,9 @@ else
     n latest
 fi
 
+# Install global npm packages
+## npm install --global firebase-tools
+## npm install --global typescript
+
+echo "Global npm packages installed:"
+npm list --global --depth=0
