@@ -2,7 +2,8 @@
 alias ls='ls -oAhFG'
 
 # Prompt(s)
-PROMPT='%1~ %L %# '
+PROMPT='
+%1~ %L %# '
 RPROMPT='%*'
 
 # Functions
