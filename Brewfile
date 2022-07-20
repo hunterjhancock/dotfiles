@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/core"
 # Distributed revision control system
 brew "git"
@@ -9,6 +10,8 @@ brew "mas"
 cask "adguard"
 # Web browser
 cask "google-chrome"
+# Software for Logitech devices
+cask "logi-options-plus"
 # Open-source code editor
 cask "visual-studio-code"
 mas "Auto HD FPS for YouTube", id: 1546729687
