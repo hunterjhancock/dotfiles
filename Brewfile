@@ -6,6 +6,8 @@ tap "homebrew/core"
 brew "git"
 # Mac App Store command-line interface
 brew "mas"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Stand alone ad blocker
 cask "adguard"
 # Voice and text chat software
