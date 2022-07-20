@@ -1,6 +1,7 @@
 echo "Hello from .zshrc"
 
 # Variables
+## An option for installing casks without a warning:
 ## export HOMEBREW_CASK_OPTS="--no-quarantine"
 # n Node version management:
 export N_PREFIX="$HOME/.n"
@@ -22,7 +23,7 @@ function mkcd() {
 }
 
 # Locations to $PATH variable
-## Add Visual Studio Code (code)
+## Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 ## n Node version management
 export PATH="$PATH:$N_PREFIX/bin"
