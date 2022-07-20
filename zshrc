@@ -4,6 +4,7 @@
 
 # Aliases
 alias ls='ls -oAhFG'
+alias bbd='brew bundle dump --force --describe'
 
 # Prompt(s)
 PROMPT='
