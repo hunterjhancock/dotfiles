@@ -7,6 +7,7 @@ echo "Hello from .zshrc"
 # Aliases
 alias ls='ls -oAhFG'
 alias bbd='brew bundle dump --force --describe'
+alias trail='<<<${(F)path}'
 
 # Prompt(s)
 PROMPT='
