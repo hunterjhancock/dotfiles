@@ -8,6 +8,8 @@ brew "git"
 brew "less"
 # Mac App Store command-line interface
 brew "mas"
+# Node version management
+brew "n"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # UNIX shell (command interpreter)
