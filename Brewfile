@@ -10,6 +10,8 @@ brew "less"
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Stand alone ad blocker
 cask "adguard"
 # Voice and text chat software
