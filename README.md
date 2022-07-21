@@ -37,16 +37,16 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 | [.gitignore](.gitignore) | |
 | [.gitmodules](.gitmodules) | |
 | [Brewfile](Brewfile) | [Homebrew](https://brew.sh) install configuration |
-| [gitconfig](gitconfig) | configuration for [git](https://git-scm.com) (symlinked to `~/` with [Dotbot](https://github.com/anishathalye/dotbot)) |
+| [gitconfig](gitconfig) | [git](https://git-scm.com) configuration (symlinked to `~/` with [Dotbot](https://github.com/anishathalye/dotbot)) |
 | [install](install) | primary install script; runs [Dotbot](https://github.com/anishathalye/dotbot) (which runs the other install scripts in this repo) |
 | [install.conf.yaml](install.conf.yaml) | [Dotbot](https://github.com/anishathalye/dotbot) install configuration |
 | [LICENSE](LICENSE) | license information for this repository |
-| [README.md](README.md) | README for this repository|
-| [setup_homebrew.zsh](setup_homebrew.zsh) | script used by [Dotbot](https://github.com/anishathalye/dotbot) to install [Homebrew](https://brew.sh) and configure it according to [Brewfile](Brewfile) |
-| [setup_node.zsh](setup_node.zsh) | script used by [Dotbot](https://github.com/anishathalye/dotbot) to install [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com) using [n](https://github.com/tj/n), and install any [npm](https://www.npmjs.com) packages |
-| [setup_zsh.zsh](setup_zsh.zsh) | script used by [Dotbot](https://github.com/anishathalye/dotbot) to install [zsh](https://zsh.sourceforge.io) and set it as the default shell |
-| [zshenv](zshenv) | configuration for [zsh](https://zsh.sourceforge.io) (symlinked to `~/` with [Dotbot](https://github.com/anishathalye/dotbot)) |
-| [zshrc](zshrc) | configuration for [zsh](https://zsh.sourceforge.io) (symlinked to `~/` with [Dotbot](https://github.com/anishathalye/dotbot)) |
+| [README.md](README.md) | README for this repository |
+| [setup_homebrew.zsh](setup_homebrew.zsh) | script for [Dotbot](https://github.com/anishathalye/dotbot) to install [Homebrew](https://brew.sh) and configure it according to [Brewfile](Brewfile) |
+| [setup_node.zsh](setup_node.zsh) | script for [Dotbot](https://github.com/anishathalye/dotbot) to install [Node.js](https://nodejs.org/en/) & [npm](https://www.npmjs.com) with [n](https://github.com/tj/n) and any [npm](https://www.npmjs.com) packages |
+| [setup_zsh.zsh](setup_zsh.zsh) | script for [Dotbot](https://github.com/anishathalye/dotbot) to install [zsh](https://zsh.sourceforge.io) and set it as the default shell |
+| [zshenv](zshenv) | [zsh](https://zsh.sourceforge.io) configuration (symlinked to `~/` with [Dotbot](https://github.com/anishathalye/dotbot)) |
+| [zshrc](zshrc) | [zsh](https://zsh.sourceforge.io) configuration (symlinked to `~/` with [Dotbot](https://github.com/anishathalye/dotbot)) |
 
 ## Current list of software
 
