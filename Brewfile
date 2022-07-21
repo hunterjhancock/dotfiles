@@ -32,4 +32,5 @@ mas "Logic Pro", id: 634148309
 mas "Magnet", id: 441258766
 mas "Speedtest", id: 1153157709
 mas "Things", id: 904280696
+mas "Userscripts", id: 1463298887
 mas "Xcode", id: 497799835
