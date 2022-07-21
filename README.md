@@ -9,7 +9,7 @@ My personal dotfiles for macOS, inspired by this course:
 
 ## How it works
 
-This repository is dependent on [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_). Installing it gives us access to a bunch of tools (like [git](https://git-scm.com)) that are needed to access & run our install scripts.
+This repository is dependent on [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_). Installing it gives us access to a bunch of tools (like [git](https://git-scm.com)) that are needed to access & run our [install](install) scripts.
 
 After installing the [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_) and cloning this repository to your local machine (specifically in `~/.dotfiles`), the [install](install) script does the following things:
 
@@ -18,6 +18,7 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 - Tells [Dotbot](https://github.com/anishathalye/dotbot) to run the [setup_homebrew.zsh](setup_homebrew.zsh) script
     - Installs [Homebrew](https://brew.sh)
     - Tells [Homebrew](https://brew.sh) to install the software in [Brewfile](Brewfile)
+    - Note: This script tells [Homebrew](https://brew.sh) to use [mas-cli](https://github.com/mas-cli/mas) to install apps from the Mac App Store. Be sure the `mas "Software Name", id: 12345` commands in [Brewfile](Brewfile) only include software that you have purchased or installed before with your Apple ID.
 - Tells [Dotbot](https://github.com/anishathalye/dotbot) to run the [setup_zsh.zsh](setup_zsh.zsh) script
     - Adds the [Homebrew](https://brew.sh) version of [zsh](https://zsh.sourceforge.io) to the list of available shells
     - Sets the [Homebrew](https://brew.sh) version of [zsh](https://zsh.sourceforge.io) as the default interactive shell (over the Apple version)
@@ -31,7 +32,9 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 1. Run `xcode-select --install` in terminal to install Xcode Command Line Tools (may take a while)
 2. Clone and enter the repo `git clone https://github.com/hunterjhancock/dotfiles.git ~/.dotfiles && cd ~/.dotfiles`
 3. If necessary, cut a new git branch: `git checkout new_branch_name`
-4. Verify that the Brewfile includes exactly the software you want to install
+4. Verify that [Brewfile](Brewfile) includes the exact software you want [Homebrew](https://brew.sh) to install
+5. Verify that [setup_node.zsh](setup_node.zsh) includes the exact [npm](https://www.npmjs.com) packages you want to install
+6. Run [`./install`](install)
 5. GitHub SSH
 
 ## Usage
