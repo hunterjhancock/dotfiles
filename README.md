@@ -74,6 +74,16 @@ I sometimes forget to update this list, so the items in [Brewfile](Brewfile) and
 | [Userscripts](https://github.com/quoid/userscripts#installation)                              | an open-source userscript editor for Safari                                                                                   |
 | [Xcode](https://developer.apple.com/xcode/)                                                   | Apple's IDE for developing Apple ecosystem software                                                                           |
 
+## Aliases
+
+My aliases are located in [zshrc](zshrc), but here's a pretty list with descriptions:
+
+| Alias   | Command                                                           | Description                                                                   |
+| ------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `ls`    | `ls -oAhFG`                                                       | lists directory contents in a simpler and more legible format                 |
+| `bbd`   | `brew bundle dump --force --describe --file=~/.dotfiles/Brewfile` | updates [Brewfile](Brewfile) to match the set of currently installed software |
+| `trail` | `<<<${(F)path}`                                                   | returns `$PATH` in a list format                                              |
+
 ## Installation
 
 > Note: These steps assume you're working with a clean install of macOS. I haven't yet considered deconflicting existing apps, packages, etc. with the ones that will be installed by this repo. For example, I don't know what happens if you install [Google Chrome](https://www.google.com/chrome/) with this repo if you already have it installed from the chrome installation page.
@@ -84,8 +94,8 @@ Open up your [terminal](https://support.apple.com/guide/terminal/open-or-quit-te
 1. Run `git clone https://github.com/hunterjhancock/dotfiles.git ~/.dotfiles && cd ~/.dotfiles` to clone & navigate to the repo.
 1. If desired, run `git checkout new_branch_name` to create a new [git](https://git-scm.com) branch.
 1. Verify that [install.conf.yaml](install.conf.yaml) includes the dotfiles, directories, and scripts you want [Dotbot](https://github.com/anishathalye/dotbot) to symlink, create, and run, respectively.
-1. Verify that [Brewfile](Brewfile) includes the exact software you want [Homebrew](https://brew.sh) to install
-1. Verify that [setup_node.zsh](setup_node.zsh) includes the exact [npm](https://www.npmjs.com) packages you want to install
+1. Verify that [Brewfile](Brewfile) includes the exact software you want [Homebrew](https://brew.sh) to install.
+1. Verify that [setup_node.zsh](setup_node.zsh) includes the exact [npm](https://www.npmjs.com) packages you want to install.
 1. Run [`./install`](install) to start the installation with [Dotbot](https://github.com/anishathalye/dotbot).
 1. _Coming soon..._
 
@@ -96,13 +106,3 @@ _Coming soon..._
 ## Uninstallation
 
 _Coming soon..._
-
-## Aliases
-
-My aliases are located in [zshrc](zshrc), but here's a pretty list with descriptions:
-
-| Alias   | Command                                                           | Description                                                                   |
-| ------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `ls`    | `ls -oAhFG`                                                       | lists directory contents in a simpler and more legible format                 |
-| `bbd`   | `brew bundle dump --force --describe --file=~/.dotfiles/Brewfile` | updates [Brewfile](Brewfile) to match the set of currently installed software |
-| `trail` | `<<<${(F)path}`                                                   | returns `$PATH` in a list format                                              |
