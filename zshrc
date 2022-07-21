@@ -1,9 +1,7 @@
 echo "Hello from .zshrc"
 
 # Variables
-## An option for installing casks without a warning:
-## export HOMEBREW_CASK_OPTS="--no-quarantine"
-# n Node version management:
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
 
