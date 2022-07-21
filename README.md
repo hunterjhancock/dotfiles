@@ -53,11 +53,15 @@ I sometimes forget to update this list, so the items in [Brewfile](Brewfile) and
 
 | Name                                                                                          | Description                                                                                                                   |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [Homebrew](https://brew.sh)                                                                   | the missing package manager for macOS (or Linux)                                                                              |
 | [git](https://git-scm.com)                                                                    | a distributed revision control system                                                                                         |
 | [less](https://www.greenwoodsoftware.com/less/)                                               | a pager program similar to [more](<https://en.wikipedia.org/wiki/More_(command)>)                                             |
 | [mas-cli](https://github.com/mas-cli/mas)                                                     | a Mac App Store [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface)                                |
 | [n](https://github.com/tj/n)                                                                  | for [Node.js](https://nodejs.org/en/) version management                                                                      |
+| [Node.js](https://nodejs.org/en/)                                                             | a JavaScript runtime built on Chrome's V8 JavaScript engine.                                                                  |
+| [npm](https://www.npmjs.com)                                                                  | a package manager for JavaScript included with [Node.js](https://nodejs.org/en/)                                              |
 | [nano](https://www.nano-editor.org)                                                           | a free ([GNU](https://www.gnu.org)) replacement for the [Pico](https://www.uic.edu/depts/accc/software/pine/pico) text editor |
+| [neovim](https://neovim.io)                                                                   | an ambitious Vim-fork focused on extensibility and agility                                                                    |
 | [vim](https://www.vim.org)                                                                    | a Vi 'workalike' with many additional features                                                                                |
 | [zsh](https://zsh.sourceforge.io)                                                             | a UNIX shell (command interpreter)                                                                                            |
 | [Adguard](https://adguard.com/)                                                               | a stand-alone ad blocker                                                                                                      |
@@ -71,7 +75,6 @@ I sometimes forget to update this list, so the items in [Brewfile](Brewfile) and
 | [Magnet](https://magnet.crowdcafe.com)                                                        | a window manager for macOS                                                                                                    |
 | [Speedtest](https://www.speedtest.net/about)                                                  | an internet speed & performance analyzer                                                                                      |
 | [Things](https://culturedcode.com/things/)                                                    | a task manager for the Apple ecosystem                                                                                        |
-| [Userscripts](https://github.com/quoid/userscripts#installation)                              | an open-source userscript editor for Safari                                                                                   |
 | [Xcode](https://developer.apple.com/xcode/)                                                   | Apple's IDE for developing Apple ecosystem software                                                                           |
 
 ## Aliases
