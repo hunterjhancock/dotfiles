@@ -1,6 +1,6 @@
 # Hunter's dotfiles
 
-**Warning: This is still a work in progess. Use at your own risk!**
+> **Warning**: This is still a work in progess. Use at your own risk!
 
 My personal dotfiles for macOS, inspired by:
 
@@ -49,6 +49,8 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 
 ## Software list
 
+I sometimes forget to update this list, so the items in [Brewfile](Brewfile) and [setup_node.zsh](setup_node.zsh) should more accurately reflect my current setup. Maybe I should write a script to auto-update this list... 🤔
+
 | Name                                                                                          | Description                                                                                                                   |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | [git](https://git-scm.com)                                                                    | a distributed revision control system                                                                                         |
@@ -74,6 +76,10 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 
 ## Installation
 
+> Note: These steps assume you're working with a clean install of macOS. I haven't yet considered deconflicting existing apps, packages, etc. with the ones that will be installed by this repo. For example, I don't know what happens if you install [Google Chrome](https://www.google.com/chrome/) with this repo if you already have it installed from the chrome installation page.
+
+Open up your [terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) and follow these steps:
+
 1. Run `xcode-select --install` in terminal to install [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_).
 1. Run `git clone https://github.com/hunterjhancock/dotfiles.git ~/.dotfiles && cd ~/.dotfiles` to clone & navigate to the repo.
 1. If desired, run `git checkout new_branch_name` to create a new [git](https://git-scm.com) branch.
@@ -81,22 +87,22 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 1. Verify that [Brewfile](Brewfile) includes the exact software you want [Homebrew](https://brew.sh) to install
 1. Verify that [setup_node.zsh](setup_node.zsh) includes the exact [npm](https://www.npmjs.com) packages you want to install
 1. Run [`./install`](install) to start the installation with [Dotbot](https://github.com/anishathalye/dotbot).
-1. *Coming soon...*
+1. _Coming soon..._
 
 ## Usage
 
-*Coming soon...*
+_Coming soon..._
 
-## Uninstall
+## Uninstallation
 
-*Coming soon...*
+_Coming soon..._
 
 ## Aliases
 
 My aliases are located in [zshrc](zshrc), but here's a pretty list with descriptions:
 
-| Alias   | Command                                                           | Description                                                           |
-| ------- | ----------------------------------------------------------------- | --------------------------------------------------------------------- |
-| `ls`    | `ls -oAhFG`                                                       | lists directory contents in a simpler and more legible format         |
+| Alias   | Command                                                           | Description                                                                   |
+| ------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `ls`    | `ls -oAhFG`                                                       | lists directory contents in a simpler and more legible format                 |
 | `bbd`   | `brew bundle dump --force --describe --file=~/.dotfiles/Brewfile` | updates [Brewfile](Brewfile) to match the set of currently installed software |
-| `trail` | `<<<${(F)path}`                                                   | returns `$PATH` in a list format                                      |
+| `trail` | `<<<${(F)path}`                                                   | returns `$PATH` in a list format                                              |
