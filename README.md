@@ -86,7 +86,7 @@ My aliases are located in [zshrc](zshrc), but here's a pretty list with descript
 
 ## Installation
 
-> Note: These steps assume you're working with a clean install of macOS. I haven't yet considered deconflicting existing apps, packages, etc. with the ones that will be installed by this repo. For example, I don't know what happens if you install [Google Chrome](https://www.google.com/chrome/) with this repo if you already have it installed from the chrome installation page.
+> **Note**: These steps assume you're working with a clean install of macOS. I haven't yet considered deconflicting existing apps, packages, etc. with the ones that will be installed by this repo. For example, I don't know what happens if you install [Google Chrome](https://www.google.com/chrome/) with this repo if you already have it installed from the chrome installation page.
 
 Open up your [terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) and follow these steps:
 
