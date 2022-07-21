@@ -5,7 +5,7 @@
 Warning: This is still a work in progess. Use at your own risk!
 
 My personal dotfiles for macOS, inspired by:
-- [Patrick McDonald's dotfiles](https://github.com/eieioxyz/dotfiles_macos) (check out his amazing course on Udemy: ["Dotfiles from Start to Finish-ish"](https://www.udemy.com/share/1043Ta3@fWYLq4xuDOzVCe1n-FaqtWDKj3GC3nhuomzNqQF4nzT-7OwA669olDFasO7t_S53Tw==/))
+- [Patrick McDonald's dotfiles](https://github.com/eieioxyz/dotfiles_macos) (check out his amazing Udemy course: ["Dotfiles from Start to Finish-ish"](https://www.udemy.com/share/1043Ta3@fWYLq4xuDOzVCe1n-FaqtWDKj3GC3nhuomzNqQF4nzT-7OwA669olDFasO7t_S53Tw==/))
 - [Takuya Matsuyama's dotfiles](https://github.com/craftzdog/dotfiles-public)
 - [Mathias Bynen's dotfiles](https://github.com/mathiasbynens/dotfiles)
 
@@ -20,7 +20,7 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 - [Dotbot](https://github.com/anishathalye/dotbot) runs the [setup_homebrew.zsh](setup_homebrew.zsh) script
     - Installs [Homebrew](https://brew.sh)
     - Tells [Homebrew](https://brew.sh) to install the software in [Brewfile](Brewfile)
-    - Note: This script tells [Homebrew](https://brew.sh) to use [mas-cli](https://github.com/mas-cli/mas) to install apps from the Mac App Store. Be sure the `mas` commands (e.g. ` "Software Name", id: 12345`) in [Brewfile](Brewfile) only include software that you have purchased or installed before with your Apple ID.
+    - Note: This script tells [Homebrew](https://brew.sh) to use [mas-cli](https://github.com/mas-cli/mas) to install apps from the Mac App Store. Be sure the `mas` commands (e.g. `mas "Software Name", id: 12345`) in [Brewfile](Brewfile) only include software that you have purchased or installed before with your Apple ID.
 - [Dotbot](https://github.com/anishathalye/dotbot) runs the [setup_zsh.zsh](setup_zsh.zsh) script
     - Adds the [Homebrew](https://brew.sh) version of [zsh](https://zsh.sourceforge.io) to the list of available shells
     - Sets the [Homebrew](https://brew.sh) version of [zsh](https://zsh.sourceforge.io) as the default ***interactive*** shell (instead of the Apple default version)
@@ -31,7 +31,9 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 
 ## File structure explained
 
-- [dotbot/](dotbot/) directory: contains the [Dotbot](https://github.com/anishathalye/dotbot) submodule
+| File | Description |
+| --- | --- |
+| [dotbot/](dotbot/) directory | ontains the [Dotbot](https://github.com/anishathalye/dotbot) submodule |
 - [.gitignore](.gitignore): 
 - [.gitmodules](.gitmodules): 
 - [Brewfile](Brewfile): [Homebrew](https://brew.sh) install configuration
@@ -42,7 +44,7 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 - [README.md](README.md): 
 - [setup_homebrew.zsh](setup_homebrew.zsh): the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [Homebrew](https://brew.sh) and configures it according to [Brewfile](Brewfile)
 - [setup_node.zsh](setup_node.zsh): the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com) using [n](https://github.com/tj/n), and installs any [npm](https://www.npmjs.com) packages
-- [setup_zsh.zsh](setup_zsh.zsh): the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [zsh](https://zsh.sourceforge.io) and sets it as the default interactive ***and*** non-interactive shell
+- [setup_zsh.zsh](setup_zsh.zsh): the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [zsh](https://zsh.sourceforge.io) and sets it as the default shell
 - [zshenv](zshenv): 
 - [zshrc](zshrc): the configuration file for [zsh](https://zsh.sourceforge.io) (symlinked to the home directory with [Dotbot](https://github.com/anishathalye/dotbot))
 
