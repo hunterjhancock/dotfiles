@@ -10,7 +10,7 @@
     ~/.gitconfig:
 
 - create:
-  - ~/Projects
+  - ~/projects
 
 - shell:
   - command: ./setup_homebrew.zsh
