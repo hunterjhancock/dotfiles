@@ -12,6 +12,8 @@ brew "mas"
 brew "n"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Vi 'workalike' with many additional features
+brew "vim"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Stand alone ad blocker
