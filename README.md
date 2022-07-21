@@ -10,9 +10,9 @@ My personal dotfiles for macOS, inspired by:
 
 ## How it works
 
-This repository is dependent on [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_). Installing it gives us access to a bunch of tools (like [git](https://git-scm.com)) that are needed to access & run our [install](install) scripts.
+This repository is dependent on [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_). Installing it gives us access to a bunch of tools (like [git](https://git-scm.com)) that are needed to access & run our [install](install) script(s).
 
-After installing the [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_) and cloning this repository to your local machine (specifically in `~/.dotfiles`), the [install](install) script tells [Dotbot](https://github.com/anishathalye/dotbot) to run according to the configuration [install.conf.yaml](install.conf.yaml):
+After installing the [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_) and cloning this repository to your local machine (specifically to `~/.dotfiles`), the [install](install) script tells [Dotbot](https://github.com/anishathalye/dotbot) to run according to the configuration in [install.conf.yaml](install.conf.yaml):
 
 - [Dotbot](https://github.com/anishathalye/dotbot) sets up dotfile symlinks as defined in the `link` section of [install.conf.yaml](install.conf.yaml)
 - [Dotbot](https://github.com/anishathalye/dotbot) creates directories as defined in the `create` section of [install.conf.yaml](install.conf.yaml)
@@ -74,24 +74,22 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 
 ## Installation
 
-1. Run `xcode-select --install` in terminal to install Xcode Command Line Tools (may take a while)
-1. Clone and enter the repo `git clone https://github.com/hunterjhancock/dotfiles.git ~/.dotfiles && cd ~/.dotfiles`
-1. If necessary, cut a new git branch: `git checkout new_branch_name`
-1. Verify that [install.conf.yaml](install.conf.yaml) includes the dotfiles you want [Dotbot](https://github.com/anishathalye/dotbot) to symlink
-1. Verify that [install.conf.yaml](install.conf.yaml) includes any directories you want [Dotbot](https://github.com/anishathalye/dotbot) to install
-1. Verify that [install.conf.yaml](install.conf.yaml) includes the scripts you want [Dotbot](https://github.com/anishathalye/dotbot) to install
+1. Run `xcode-select --install` in terminal to install [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_).
+1. Run `git clone https://github.com/hunterjhancock/dotfiles.git ~/.dotfiles && cd ~/.dotfiles` to clone & navigate to the repo.
+1. If desired, run `git checkout new_branch_name` to create a new [git](https://git-scm.com) branch.
+1. Verify that [install.conf.yaml](install.conf.yaml) includes the dotfiles, directories, and scripts you want [Dotbot](https://github.com/anishathalye/dotbot) to symlink, create, and run, respectively.
 1. Verify that [Brewfile](Brewfile) includes the exact software you want [Homebrew](https://brew.sh) to install
 1. Verify that [setup_node.zsh](setup_node.zsh) includes the exact [npm](https://www.npmjs.com) packages you want to install
-1. Run [`./install`](install)
-1. Coming soon...
+1. Run [`./install`](install) to start the installation with [Dotbot](https://github.com/anishathalye/dotbot).
+1. *Coming soon...*
 
 ## Usage
 
-Coming soon...
+*Coming soon...*
 
 ## Uninstall
 
-Coming soon...
+*Coming soon...*
 
 ## Aliases
 
@@ -100,5 +98,5 @@ My aliases are located in [zshrc](zshrc), but here's a pretty list with descript
 | Alias   | Command                                                           | Description                                                           |
 | ------- | ----------------------------------------------------------------- | --------------------------------------------------------------------- |
 | `ls`    | `ls -oAhFG`                                                       | lists directory contents in a simpler and more legible format         |
-| `bbd`   | `brew bundle dump --force --describe --file=~/.dotfiles/Brewfile` | updates the Brewfile to match the set of currently installed software |
+| `bbd`   | `brew bundle dump --force --describe --file=~/.dotfiles/Brewfile` | updates [Brewfile](Brewfile) to match the set of currently installed software |
 | `trail` | `<<<${(F)path}`                                                   | returns `$PATH` in a list format                                      |
