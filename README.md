@@ -1,6 +1,6 @@
 # Hunter's dotfiles
 
-[Skip to installation](#Installation)
+[Skip to installation](#installation)
 
 Warning: This is still a work in progess. Use at your own risk!
 
@@ -69,7 +69,7 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 - [Things](https://culturedcode.com/things/), a task manager for the Apple ecosystem
 - [Xcode](https://developer.apple.com/xcode/), Apple's IDE for developing Apple ecosystem software
 
-## Installation (needs edit)
+## Installation
 
 1. Run `xcode-select --install` in terminal to install Xcode Command Line Tools (may take a while)
 1. Clone and enter the repo `git clone https://github.com/hunterjhancock/dotfiles.git ~/.dotfiles && cd ~/.dotfiles`
@@ -82,21 +82,21 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 1. Run [`./install`](install)
 1. ...
 
-## Usage (needs edit)
+## Usage
 
 
 
-## TODO (move to GitHub issues?)
+## TODO
 - Automate macOS system preferences
 - Automate sign-in to apps after installing
 - Automate app preferences after installing
     - VS Code settings sync
 
-## Command changes (needs edit)
+## Command changes
 - `brew bundle dump --force --describe`
 - `source .zshrc`
 
-## Aliases (needs edit)
+## Aliases
 - ls
 - bbd
 - trail
