@@ -33,20 +33,20 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 
 | File | Description |
 | --- | --- |
-| [dotbot/](dotbot/) directory | ontains the [Dotbot](https://github.com/anishathalye/dotbot) submodule |
-- [.gitignore](.gitignore): 
-- [.gitmodules](.gitmodules): 
-- [Brewfile](Brewfile): [Homebrew](https://brew.sh) install configuration
-- [gitconfig](gitconfig): the configuration file for [git](https://git-scm.com) (symlinked to the home directory with [Dotbot](https://github.com/anishathalye/dotbot))
-- [install](install): **main** install script; runs [Dotbot](https://github.com/anishathalye/dotbot) (which runs many other scripts)
-- [install.conf.yaml](install.conf.yaml): [Dotbot](https://github.com/anishathalye/dotbot) install configuration
-- [LICENSE](LICENSE): 
-- [README.md](README.md): 
-- [setup_homebrew.zsh](setup_homebrew.zsh): the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [Homebrew](https://brew.sh) and configures it according to [Brewfile](Brewfile)
-- [setup_node.zsh](setup_node.zsh): the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com) using [n](https://github.com/tj/n), and installs any [npm](https://www.npmjs.com) packages
-- [setup_zsh.zsh](setup_zsh.zsh): the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [zsh](https://zsh.sourceforge.io) and sets it as the default shell
-- [zshenv](zshenv): 
-- [zshrc](zshrc): the configuration file for [zsh](https://zsh.sourceforge.io) (symlinked to the home directory with [Dotbot](https://github.com/anishathalye/dotbot))
+| [dotbot/](dotbot/) directory | Contains the [Dotbot](https://github.com/anishathalye/dotbot) submodule |
+| [.gitignore](.gitignore) | |
+| [.gitmodules](.gitmodules) | |
+| [Brewfile](Brewfile) | [Homebrew](https://brew.sh) install configuration |
+| [gitconfig](gitconfig) | the configuration file for [git](https://git-scm.com) (symlinked to the home directory with [Dotbot](https://github.com/anishathalye/dotbot)) |
+| [install](install) | **main** install script; runs [Dotbot](https://github.com/anishathalye/dotbot) (which runs many other scripts) |
+| [install.conf.yaml](install.conf.yaml) | [Dotbot](https://github.com/anishathalye/dotbot) install configuration |
+| [LICENSE](LICENSE) | |
+| [README.md](README.md) | |
+| [setup_homebrew.zsh](setup_homebrew.zsh) | the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [Homebrew](https://brew.sh) and configures it according to [Brewfile](Brewfile) |
+| [setup_node.zsh](setup_node.zsh) | the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com) using [n](https://github.com/tj/n), and installs any [npm](https://www.npmjs.com) packages |
+| [setup_zsh.zsh](setup_zsh.zsh) | the [Dotbot](https://github.com/anishathalye/dotbot) script that installs [zsh](https://zsh.sourceforge.io) and sets it as the default shell |
+| [zshenv](zshenv) | |
+| [zshrc](zshrc) | the configuration file for [zsh](https://zsh.sourceforge.io) (symlinked to the home directory with [Dotbot](https://github.com/anishathalye/dotbot)) |
 
 ## Current list of software
 
