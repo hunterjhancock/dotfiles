@@ -53,6 +53,9 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 1. Run `xcode-select --install` in terminal to install Xcode Command Line Tools (may take a while)
 2. Clone and enter the repo `git clone https://github.com/hunterjhancock/dotfiles.git ~/.dotfiles && cd ~/.dotfiles`
 3. If necessary, cut a new git branch: `git checkout new_branch_name`
+4. Verify that [install.conf.yaml](install.conf.yaml) includes the dotfiles you want [Dotbot](https://github.com/anishathalye/dotbot) to symlink
+4. Verify that [install.conf.yaml](install.conf.yaml) includes any directories you want [Dotbot](https://github.com/anishathalye/dotbot) to install
+4. Verify that [install.conf.yaml](install.conf.yaml) includes the scripts you want [Dotbot](https://github.com/anishathalye/dotbot) to install
 4. Verify that [Brewfile](Brewfile) includes the exact software you want [Homebrew](https://brew.sh) to install
 5. Verify that [setup_node.zsh](setup_node.zsh) includes the exact [npm](https://www.npmjs.com) packages you want to install
 6. Run [`./install`](install)
