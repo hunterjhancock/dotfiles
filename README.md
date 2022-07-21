@@ -27,6 +27,27 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
     - Tells [n](https://github.com/tj/n) (a version manager for [Node.js](https://nodejs.org/en/)) to install the latest versions of [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com)
     - Tells [npm](https://www.npmjs.com) to install any packages listed in [setup_node.zsh](setup_node.zsh)
 
+## Current list of software
+
+- [git](https://git-scm.com), a distributed revision control system
+- [less](https://www.greenwoodsoftware.com/less/), a pager program similar to [more](https://en.wikipedia.org/wiki/More_(command))
+- [mas-cli](https://github.com/mas-cli/mas), a Mac App Store [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface)
+- [n](https://github.com/tj/n), for [Node.js](https://nodejs.org/en/) version management
+- [nano](https://www.nano-editor.org), a free ([GNU](https://www.gnu.org)) replacement for the [Pico](https://www.uic.edu/depts/accc/software/pine/pico) text editor
+- [zsh](https://zsh.sourceforge.io), a UNIX shell (command interpreter)
+- [Adguard](https://adguard.com/), a stand-alone ad blocker
+- [Discord](https://discord.com), voice and text chat software
+- [Google Chrome](https://www.google.com/chrome/), a web browser
+- [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html), software for Logitech devices
+- [Visual Studio Code](https://code.visualstudio.com), an open-source code editor
+- [Auto HD FPS for YouTube](https://apps.apple.com/us/app/auto-hd-fps-for-youtube/id1546729687), a Safari extension to auto-set YouTube quality
+- [Final Cut Pro](https://www.apple.com/final-cut-pro/), video editing software from Apple
+- [Logic Pro](https://www.apple.com/logic-pro/), a [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation) and MIDI sequencer from Apple
+- [Magnet](https://magnet.crowdcafe.com), a window manager for macOS
+- [Speedtest](https://www.speedtest.net/about), an internet speed & performance analyzer
+- [Things](https://culturedcode.com/things/), a task manager for the Apple ecosystem
+- [Xcode](https://developer.apple.com/xcode/), Apple's IDE for developing Apple ecosystem software
+
 ## Installation
 
 1. Run `xcode-select --install` in terminal to install Xcode Command Line Tools (may take a while)
