@@ -9,7 +9,7 @@ export PREFIX="$N_PREFIX"
 
 # Aliases
 alias ls='ls -oAhFG'
-alias bbd='brew bundle dump --force --describe'
+alias bbd='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile'
 alias trail='<<<${(F)path}'
 
 # Prompt(s)
