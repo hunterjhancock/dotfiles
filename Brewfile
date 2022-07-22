@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/core"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Distributed revision control system
 brew "git"
 # Pager program similar to more
