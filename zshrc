@@ -25,6 +25,7 @@ typeset -U path
 
 path=(
   "$N_PREFIX/bin"
+  "/usr/local/opt/curl/bin"
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
