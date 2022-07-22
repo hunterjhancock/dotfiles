@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-echo "\n<<< Starting zsh Setup >>>\n"
+echo "\n<<< Starting zsh setup >>>\n"
 
 # Installation unnecessary; it's in the Brewfile.
 
