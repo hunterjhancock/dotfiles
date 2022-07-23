@@ -1,4 +1,9 @@
-echo "Hello from .zshrc"
+# Git info for prompt
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+zstyle ':vcs_info:git:*' formats '%b '
 
 # Variables
 export HOMEBREW_CASK_OPTS="--no-quarantine"
@@ -12,13 +17,8 @@ alias trail='<<<${(F)path}'
 
 # Prompt(s)
 PROMPT='
-%1~ %L %# '
-RPROMPT='%*'
-
-# Functions
-function mkcd() {
-  mkdir -p "$@" && cd "$_";
-}
+%* %F{white}%L%f %F{cyan}%2~%f %F{red}${vcs_info_msg_0_}%f$ '
+RPROMPT=''
 
 # Locations to $path array
 typeset -U path
