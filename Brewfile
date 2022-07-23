@@ -25,7 +25,10 @@ cask "adguard"
 # Voice and text chat software
 cask "discord"
 # Web browser
+cask "firefox"
 cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Software for Logitech devices
 cask "logi-options-plus"
 # Open-source code editor
