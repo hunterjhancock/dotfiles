@@ -1,3 +1,5 @@
+echo "Sourced .zshrc"
+
 # Git info for prompt
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
