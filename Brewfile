@@ -17,6 +17,8 @@ brew "n"
 brew "nano"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Python version management
+brew "pyenv"
 # Vi 'workalike' with many additional features
 brew "vim"
 # UNIX shell (command interpreter)
