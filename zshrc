@@ -14,7 +14,7 @@ export PREFIX="$N_PREFIX"
 export PYENV_ROOT="$HOME/.pyenv"
 
 # Aliases
-alias ls='ls -oAhFG'
+alias ll='ls -oAhFG'
 alias bbd='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile;echo "Updated Brewfile"'
 alias trail='<<<${(F)path}'
 alias sa='source ~/.zshrc'
