@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
@@ -26,6 +27,7 @@ cask "adguard"
 cask "discord"
 # Web browser
 cask "firefox"
+cask "font-fira-code"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
