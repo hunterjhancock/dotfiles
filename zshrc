@@ -11,6 +11,7 @@ zstyle ':vcs_info:git:*' formats '%b '
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
+export PYENV_ROOT="$HOME/.pyenv"
 
 # Aliases
 alias ls='ls -oAhFG'
@@ -25,10 +26,13 @@ RPROMPT=''
 
 # Locations to $path array
 typeset -U path
-
 path=(
   "$N_PREFIX/bin"
+  "$PYENV_ROOT/bin"
   "/usr/local/opt/curl/bin"
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
+
+# pyenv initialization
+eval "$(pyenv init -)"
