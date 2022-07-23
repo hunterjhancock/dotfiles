@@ -16,6 +16,7 @@ export PREFIX="$N_PREFIX"
 alias ls='ls -oAhFG'
 alias bbd='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile;echo "Updated Brewfile"'
 alias trail='<<<${(F)path}'
+alias sa='source ~/.zshrc'
 
 # Prompt(s)
 PROMPT='
