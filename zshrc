@@ -12,6 +12,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
 export PYENV_ROOT="$HOME/.pyenv"
+export RUST_DIR="$HOME/.cargo"
 
 # Aliases
 alias ll='ls -oAhFG'
@@ -30,6 +31,7 @@ path=(
   "$N_PREFIX/bin"
   "$PYENV_ROOT/bin"
   "/usr/local/opt/curl/bin"
+  "$RUST_DIR/bin"
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
