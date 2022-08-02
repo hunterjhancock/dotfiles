@@ -27,6 +27,8 @@ brew "vim"
 brew "zsh"
 # Stand alone ad blocker
 cask "adguard"
+# Memory training application
+cask "anki"
 # Voice and text chat software
 cask "discord"
 # Web browser
