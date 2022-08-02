@@ -4,9 +4,9 @@
 
 My personal dotfiles for macOS, inspired by:
 
-* [Patrick McDonald's dotfiles](https://github.com/eieioxyz/dotfiles_macos) (check out his amazing Udemy course: ["Dotfiles from Start to Finish-ish"](https://www.udemy.com/share/1043Ta3@fWYLq4xuDOzVCe1n-FaqtWDKj3GC3nhuomzNqQF4nzT-7OwA669olDFasO7t_S53Tw==/))
-* [Takuya Matsuyama's dotfiles](https://github.com/craftzdog/dotfiles-public)
-* [Mathias Bynen's dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [Patrick McDonald's dotfiles](https://github.com/eieioxyz/dotfiles_macos) (check out his amazing Udemy course: ["Dotfiles from Start to Finish-ish"](https://www.udemy.com/share/1043Ta3@fWYLq4xuDOzVCe1n-FaqtWDKj3GC3nhuomzNqQF4nzT-7OwA669olDFasO7t_S53Tw==/))
+- [Takuya Matsuyama's dotfiles](https://github.com/craftzdog/dotfiles-public)
+- [Mathias Bynen's dotfiles](https://github.com/mathiasbynens/dotfiles)
 
 ## How it works
 
@@ -14,19 +14,19 @@ This repository is dependent on [Xcode Command Line Tools](https://developer.app
 
 After installing the [Xcode Command Line Tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_) and cloning this repository to your local machine (specifically to `~/.dotfiles`), the [`install`](install) script tells [Dotbot](https://github.com/anishathalye/dotbot) to run according to the configuration in [`install.conf.yaml`](install.conf.yaml):
 
-* [Dotbot](https://github.com/anishathalye/dotbot) sets up dotfile symlinks as defined in the `link` section of [`install.conf.yaml`](install.conf.yaml)
-* [Dotbot](https://github.com/anishathalye/dotbot) creates directories as defined in the `create` section of [`install.conf.yaml`](install.conf.yaml)
-* [Dotbot](https://github.com/anishathalye/dotbot) runs the [`setup_homebrew.zsh`](setup_homebrew.zsh) script
-  * Installs [Homebrew](https://brew.sh)
-  * Tells [Homebrew](https://brew.sh) to install the software in [`Brewfile`](Brewfile)
-  * Note: This script tells [Homebrew](https://brew.sh) to use [mas-cli](https://github.com/mas-cli/mas) to install apps from the Mac App Store. Be sure the `mas` commands (e.g. `mas "Software Name", id: 12345`) in [`Brewfile`](Brewfile) only include software that you have purchased or installed before with your Apple ID.
-* [Dotbot](https://github.com/anishathalye/dotbot) runs the [`setup_zsh.zsh`](setup_zsh.zsh) script
-  * Adds the [Homebrew](https://brew.sh) version of [zsh](https://zsh.sourceforge.io) to the list of available shells
-  * Sets the [Homebrew](https://brew.sh) version of [zsh](https://zsh.sourceforge.io) as the default **_interactive_** shell (instead of the Apple default version)
-  * Sets the Apple default version of [zsh](https://zsh.sourceforge.io) as the default **_non-interactive_** shell (instead of [bash](https://www.gnu.org/software/bash/), which may be unnecessary...)
-* [Dotbot](https://github.com/anishathalye/dotbot) runs the [`setup_node.zsh`](setup_node.zsh) script
-  * Tells [n](https://github.com/tj/n) (a version manager for [Node.js](https://nodejs.org/en/)) to install the latest versions of [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com)
-  * Tells [npm](https://www.npmjs.com) to install any packages listed in [`setup_node.zsh`](setup_node.zsh)
+- [Dotbot](https://github.com/anishathalye/dotbot) sets up dotfile symlinks as defined in the `link` section of [`install.conf.yaml`](install.conf.yaml)
+- [Dotbot](https://github.com/anishathalye/dotbot) creates directories as defined in the `create` section of [`install.conf.yaml`](install.conf.yaml)
+- [Dotbot](https://github.com/anishathalye/dotbot) runs the [`setup_homebrew.zsh`](setup_homebrew.zsh) script
+  - Installs [Homebrew](https://brew.sh)
+  - Tells [Homebrew](https://brew.sh) to install the software in [`Brewfile`](Brewfile)
+  - Note: This script tells [Homebrew](https://brew.sh) to use [mas-cli](https://github.com/mas-cli/mas) to install apps from the Mac App Store. Be sure the `mas` commands (e.g. `mas "Software Name", id: 12345`) in [`Brewfile`](Brewfile) only include software that you have purchased or installed before with your Apple ID.
+- [Dotbot](https://github.com/anishathalye/dotbot) runs the [`setup_zsh.zsh`](setup_zsh.zsh) script
+  - Adds the [Homebrew](https://brew.sh) version of [zsh](https://zsh.sourceforge.io) to the list of available shells
+  - Sets the [Homebrew](https://brew.sh) version of [zsh](https://zsh.sourceforge.io) as the default **_interactive_** shell (instead of the Apple default version)
+  - Sets the Apple default version of [zsh](https://zsh.sourceforge.io) as the default **_non-interactive_** shell (instead of [bash](https://www.gnu.org/software/bash/), which may be unnecessary...)
+- [Dotbot](https://github.com/anishathalye/dotbot) runs the [`setup_node.zsh`](setup_node.zsh) script
+  - Tells [n](https://github.com/tj/n) (a version manager for [Node.js](https://nodejs.org/en/)) to install the latest versions of [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com)
+  - Tells [npm](https://www.npmjs.com) to install any packages listed in [`setup_node.zsh`](setup_node.zsh)
 
 ## File structure explained
 
@@ -51,36 +51,41 @@ After installing the [Xcode Command Line Tools](https://developer.apple.com/libr
 
 I sometimes forget to update this list, so the items in [Brewfile](Brewfile) and [setup_node.zsh](setup_node.zsh) should more accurately reflect my current setup. Maybe I should write a script to auto-update this list... 🤔
 
-| Name                                                                                          | Description                                                                                                                   |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [Homebrew](https://brew.sh)                                                                   | the missing package manager for macOS (or Linux)                                                                              |
-| [curl](https://curl.se)                                                                       | to get a file from an HTTP, HTTPS or FTP server                                                                               |
-| [git](https://git-scm.com)                                                                    | a distributed revision control system                                                                                         |
-| [less](https://www.greenwoodsoftware.com/less/)                                               | a pager program similar to [more](<https://en.wikipedia.org/wiki/More_(command)>)                                             |
-| [mas-cli](https://github.com/mas-cli/mas)                                                     | a Mac App Store [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface)                                |
-| [n](https://github.com/tj/n)                                                                  | for [Node.js](https://nodejs.org/en/) version management                                                                      |
-| [Node.js](https://nodejs.org/en/)                                                             | a JavaScript runtime built on Chrome's V8 JavaScript engine.                                                                  |
-| [npm](https://www.npmjs.com)                                                                  | a package manager for JavaScript included with [Node.js](https://nodejs.org/en/)                                              |
-| [nano](https://www.nano-editor.org)                                                           | a free ([GNU](https://www.gnu.org)) replacement for the [Pico](https://www.uic.edu/depts/accc/software/pine/pico) text editor |
-| [neovim](https://neovim.io)                                                                   | an ambitious Vim-fork focused on extensibility and agility                                                                    |
-| [pyenv](https://github.com/pyenv/pyenv)                                                       | for Python version management                                                                                                 |
-| [vim](https://www.vim.org)                                                                    | a Vi 'workalike' with many additional features                                                                                |
-| [zsh](https://zsh.sourceforge.io)                                                             | a UNIX shell (command interpreter)                                                                                            |
-| [Adguard](https://adguard.com/)                                                               | a stand-alone ad blocker                                                                                                      |
-| [Discord](https://discord.com)                                                                | voice and text chat software                                                                                                  |
-| [Firefox](https://www.mozilla.org/en-US/firefox/)                                             | a web browser                                                                                                                 |
-| [Fira Code](https://github.com/tonsky/FiraCode)                                               | a free monospaced font with programming ligatures                                                                             |
-| [Google Chrome](https://www.google.com/chrome/)                                               | a web browser                                                                                                                 |
-| [iTerm2](https://iterm2.com)                                                                  | Terminal emulator as alternative to Apple's Terminal app                                                                      |
-| [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)               | software for Logitech devices                                                                                                 |
-| [Visual Studio Code](https://code.visualstudio.com)                                           | an open-source code editor                                                                                                    |
-| [Auto HD FPS for YouTube](https://apps.apple.com/us/app/auto-hd-fps-for-youtube/id1546729687) | a Safari extension to auto-set YouTube quality                                                                                |
-| [Final Cut Pro](https://www.apple.com/final-cut-pro/)                                         | video editing software from Apple                                                                                             |
-| [Logic Pro](https://www.apple.com/logic-pro/)                                                 | a [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation) and MIDI sequencer from Apple                                |
-| [Magnet](https://magnet.crowdcafe.com)                                                        | a window manager for macOS                                                                                                    |
-| [Speedtest](https://www.speedtest.net/about)                                                  | an internet speed & performance analyzer                                                                                      |
-| [Things](https://culturedcode.com/things/)                                                    | a task manager for the Apple ecosystem                                                                                        |
-| [Xcode](https://developer.apple.com/xcode/)                                                   | Apple's IDE for developing Apple ecosystem software                                                                           |
+| Name                                                                                                           | Description                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [Homebrew](https://brew.sh)                                                                                    | the missing package manager for macOS (or Linux)                                                                              |
+| [curl](https://curl.se)                                                                                        | to get a file from an HTTP, HTTPS or FTP server                                                                               |
+| [git](https://git-scm.com)                                                                                     | a distributed revision control system                                                                                         |
+| [less](https://www.greenwoodsoftware.com/less/)                                                                | a pager program similar to [more](<https://en.wikipedia.org/wiki/More_(command)>)                                             |
+| [mas-cli](https://github.com/mas-cli/mas)                                                                      | a Mac App Store [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface)                                |
+| [n](https://github.com/tj/n)                                                                                   | for [Node.js](https://nodejs.org/en/) version management                                                                      |
+| [Node.js](https://nodejs.org/en/)                                                                              | a JavaScript runtime built on Chrome's V8 JavaScript engine.                                                                  |
+| [npm](https://www.npmjs.com)                                                                                   | a package manager for JavaScript included with [Node.js](https://nodejs.org/en/)                                              |
+| [nano](https://www.nano-editor.org)                                                                            | a free ([GNU](https://www.gnu.org)) replacement for the [Pico](https://www.uic.edu/depts/accc/software/pine/pico) text editor |
+| [neovim](https://neovim.io)                                                                                    | an ambitious Vim-fork focused on extensibility and agility                                                                    |
+| [pyenv](https://github.com/pyenv/pyenv)                                                                        | for Python version management                                                                                                 |
+| [rustup](https://rustup.rs)                                                                                    | Rust toolchain installer                                                                                                      |
+| [vim](https://www.vim.org)                                                                                     | a Vi 'workalike' with many additional features                                                                                |
+| [zsh](https://zsh.sourceforge.io)                                                                              | a UNIX shell (command interpreter)                                                                                            |
+| [Adguard](https://adguard.com/)                                                                                | a stand-alone ad blocker                                                                                                      |
+| [Anki](https://apps.ankiweb.net)                                                                               | memory training application                                                                                                   |
+| [Discord](https://discord.com)                                                                                 | voice and text chat software                                                                                                  |
+| [Firefox](https://www.mozilla.org/en-US/firefox/)                                                              | a web browser                                                                                                                 |
+| [Fira Code](https://github.com/tonsky/FiraCode)                                                                | a free monospaced font with programming ligatures                                                                             |
+| [Google Chrome](https://www.google.com/chrome/)                                                                | a web browser                                                                                                                 |
+| [iTerm2](https://iterm2.com)                                                                                   | Terminal emulator as alternative to Apple's Terminal app                                                                      |
+| [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)                                | software for Logitech devices                                                                                                 |
+| [Logseq](https://logseq.com)                                                                                   | privacy-first, open-source platform for knowledge sharing and management                                                      |
+| [Native Access](https://support.native-instruments.com/hc/en-us/categories/360000053677-Download-Installation) | administration tool for Native Instruments products                                                                           |
+| [Obsidian](https://obsidian.md)                                                                                | Knowledge base that works on top of a local folder of plain text Markdown files                                               |
+| [Visual Studio Code](https://code.visualstudio.com)                                                            | an open-source code editor                                                                                                    |
+| [Auto HD FPS for YouTube](https://apps.apple.com/us/app/auto-hd-fps-for-youtube/id1546729687)                  | a Safari extension to auto-set YouTube quality                                                                                |
+| [Final Cut Pro](https://www.apple.com/final-cut-pro/)                                                          | video editing software from Apple                                                                                             |
+| [Logic Pro](https://www.apple.com/logic-pro/)                                                                  | a [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation) and MIDI sequencer from Apple                                |
+| [Magnet](https://magnet.crowdcafe.com)                                                                         | a window manager for macOS                                                                                                    |
+| [Speedtest](https://www.speedtest.net/about)                                                                   | an internet speed & performance analyzer                                                                                      |
+| [Things](https://culturedcode.com/things/)                                                                     | a task manager for the Apple ecosystem                                                                                        |
+| [Xcode](https://developer.apple.com/xcode/)                                                                    | Apple's IDE for developing Apple ecosystem software                                                                           |
 
 ## Alias list
 
