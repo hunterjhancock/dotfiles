@@ -19,6 +19,8 @@ brew "nano"
 brew "neovim"
 # Python version management
 brew "pyenv"
+# Rust toolchain installer
+brew "rustup-init"
 # Vi 'workalike' with many additional features
 brew "vim"
 # UNIX shell (command interpreter)
