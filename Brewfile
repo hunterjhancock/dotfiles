@@ -40,6 +40,8 @@ cask "google-chrome"
 cask "iterm2"
 # Software for Logitech devices
 cask "logi-options-plus"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # Open-source code editor
 cask "visual-studio-code"
 mas "Auto HD FPS for YouTube", id: 1546729687
