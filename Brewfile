@@ -42,6 +42,8 @@ cask "iterm2"
 cask "logi-options-plus"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Open-source code editor
 cask "visual-studio-code"
 mas "Auto HD FPS for YouTube", id: 1546729687
