@@ -36,8 +36,6 @@ cask "firefox"
 cask "font-fira-code"
 # Web browser
 cask "google-chrome"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Software for Logitech devices
 cask "logi-options-plus"
 # Privacy-first, open-source platform for knowledge sharing and management
