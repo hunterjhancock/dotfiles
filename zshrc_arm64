@@ -18,7 +18,7 @@ export PREFIX="$N_PREFIX"
 alias ll='ls -oAhFG'
 alias bbd='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile;echo "Updated Brewfile"'
 alias trail='<<<${(F)path}'
-alias sa='source ~/.zshrc'
+alias sa='source ~/.zshrc; source ~/.zshenv; source ~/.zprofile'
 
 # Prompt(s) - https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
 # Amazon cloud desktop prompt:
