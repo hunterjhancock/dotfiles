@@ -26,7 +26,7 @@ alias sa='source ~/.zshrc; source ~/.zshenv; source ~/.zprofile'
 # %{$fg[white]%}(%D %*) <%?> [%~] $program %{$fg[default]%}
 # %{$fg[cyan]%}%m %#%{$fg[default]%} '
 PROMPT='
-(%*) <%L> %F{cyan}[%2~]%f %F{red}${vcs_info_msg_0_}%f
+(%*) <%L> %F{blue}[%2~]%f %F{red}${vcs_info_msg_0_}%f
 %F{yellow}$%f '
 RPROMPT=''
 

@@ -5,6 +5,8 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
 # Pager program similar to more
@@ -29,6 +31,8 @@ brew "zsh"
 cask "adguard"
 # Memory training application
 cask "anki"
+# Application uninstaller
+cask "appcleaner"
 # Voice and text chat software
 cask "discord"
 # Web browser
