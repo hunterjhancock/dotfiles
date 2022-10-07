@@ -2,9 +2,16 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
-DOTBOT_DIR="dotbot"
+if [ $(uname -m) = 'arm64' ]; then
+  CONFIG="install.conf.arm64.yaml"
+elif [ $(uname -m) = 'x86_64' ]; then
+  CONFIG="install.conf.x86_64.yaml"
+else
+  echo "Computer architecture unsupported ($(uname -m)). Exiting install."
+  exit
+fi
 
+DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
