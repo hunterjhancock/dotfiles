@@ -1,0 +1,25 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshenv: zshenv_x86_64
+    ~/.zshrc: zshrc_x86_64
+    ~/.zprofile: zprofile_x86_64
+    ~/.gitconfig:
+
+- create:
+    - ~/workplace
+
+- shell:
+    - command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
+    - command: ./setup_zsh.zsh
+      stdout: true
+      stderr: true
+    - command: ./setup_node.zsh
+      stdout: true
+      stderr: true
