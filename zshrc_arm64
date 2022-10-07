@@ -20,9 +20,14 @@ alias bbd='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile;echo 
 alias trail='<<<${(F)path}'
 alias sa='source ~/.zshrc'
 
-# Prompt(s)
+# Prompt(s) - https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
+# Amazon cloud desktop prompt:
+# PROMPT='
+# %{$fg[white]%}(%D %*) <%?> [%~] $program %{$fg[default]%}
+# %{$fg[cyan]%}%m %#%{$fg[default]%} '
 PROMPT='
-%* %F{white}%L%f %F{cyan}%2~%f %F{red}${vcs_info_msg_0_}%f$ '
+(%*) <%L> %F{cyan}[%2~]%f %F{red}${vcs_info_msg_0_}%f
+%F{yellow}$%f '
 RPROMPT=''
 
 # Locations to $path array
