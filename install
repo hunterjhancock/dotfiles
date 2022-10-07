@@ -3,11 +3,13 @@
 set -e
 
 if [ $(uname -m) = 'arm64' ]; then
+    echo "arm64 architecture detected. Proceeding with install..."
     CONFIG="install.conf.arm64.yaml"
 elif [ $(uname -m) = 'x86_64' ]; then
+    echo "x86_64 architecture detected. Proceeding with install..."
     CONFIG="install.conf.x86_64.yaml"
 else
-    echo "Computer architecture unsupported ($(uname -m)). Exiting install."
+    echo "Computer architecture unsupported ($(uname -m)). Exiting install..."
     exit
 fi
 
