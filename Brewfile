@@ -48,8 +48,13 @@ cask "obsidian"
 cask "visual-studio-code"
 mas "Auto HD FPS for YouTube", id: 1546729687
 mas "Final Cut Pro", id: 424389933
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "Logic Pro", id: 634148309
 mas "Magnet", id: 441258766
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Speedtest", id: 1153157709
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
