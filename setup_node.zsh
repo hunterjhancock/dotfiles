@@ -6,7 +6,7 @@ echo "\n<<< Starting Node setup >>>\n"
 # See zshrc for N_PREFIX variable and addition to $path array.
 
 if exists node; then
-    echo "Node $(node --version) and npm $(npm --version) already installed"
+    echo "Node $(node --version) and npm $(npm --version) already installed..."
 else
     echo "Installing Node & npm with n..."
     n latest
