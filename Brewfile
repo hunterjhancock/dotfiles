@@ -3,6 +3,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # GitHub command-line tool
@@ -11,6 +13,8 @@ brew "gh"
 brew "git"
 # Pager program similar to more
 brew "less"
+# Utility for directing compilation
+brew "make"
 # Mac App Store command-line interface
 brew "mas"
 # Node version management
@@ -19,12 +23,22 @@ brew "n"
 brew "nano"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Python version management
-brew "pyenv"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Library for command-line editing
+brew "readline"
+# Command-line interface for SQLite
+brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Rust toolchain installer
 brew "rustup-init"
+# Tool Command Language
+brew "tcl-tk"
 # Vi 'workalike' with many additional features
 brew "vim"
+# General-purpose lossless data-compression library
+brew "zlib"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Stand alone ad blocker
