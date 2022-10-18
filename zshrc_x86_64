@@ -11,7 +11,6 @@ zstyle ':vcs_info:git:*' formats '%b '
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
-export PYENV_ROOT="$HOME/.pyenv"
 export RUST_DIR="$HOME/.cargo"
 
 # Aliases
@@ -19,27 +18,25 @@ alias ll='ls -oAhFG'
 alias bbd='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile;echo "Updated Brewfile"'
 alias trail='<<<${(F)path}'
 alias sa='source ~/.zshrc; source ~/.zshenv; source ~/.zprofile'
+alias python='/usr/local/bin/python3.10'
+alias pip='/usr/local/bin/pip3'
 
-# Prompt(s) - https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
+# Prompt manual: https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
 # Amazon cloud desktop prompt:
 # PROMPT='
 # %{$fg[white]%}(%D %*) <%?> [%~] $program %{$fg[default]%}
 # %{$fg[cyan]%}%m %#%{$fg[default]%} '
 PROMPT='
-(%*) <%L> %F{blue}[%2~]%f %F{red}${vcs_info_msg_0_}%f
-%F{yellow}$%f '
+(%*) %F{blue}[%~]%f %F{red}${vcs_info_msg_0_}%f
+%(?..%F{red}<%?> %f)%F{yellow}$%f '
 RPROMPT=''
 
 # Locations to $path array
 typeset -U path
 path=(
   "$N_PREFIX/bin"
-  "$PYENV_ROOT/bin"
   "/usr/local/opt/curl/bin"
-  "$RUST_DIR/bin"
+  # "$RUST_DIR/bin"
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
-
-# pyenv initialization
-eval "$(pyenv init -)"
