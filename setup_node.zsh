@@ -15,6 +15,7 @@ fi
 # Install global npm packages
 ## npm install --global firebase-tools
 ## npm install --global typescript
+npm install --global yarn
 
 echo "Global npm packages installed:"
 npm list --global --depth=0
